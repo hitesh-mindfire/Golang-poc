@@ -2,7 +2,8 @@ const nats = require("nats");
 
 async function main() {
   // Connect to NATS
-  const nc = await nats.connect({ servers: "nats://localhost:4222" });
+  // const nc = await nats.connect({ servers: "nats://localhost:4222" });
+  const nc = await nats.connect({ servers: "nats-server:4222" });
 
   console.log("Notification Service listening for order events...");
 
