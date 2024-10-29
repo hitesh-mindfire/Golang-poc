@@ -14,7 +14,6 @@ import (
 
 func main() {
 	// Connect to gRPC User Service
-	// conn, err := grpc.NewClient("localhost:50051", grpc.WithTransportCredentials(insecure.NewCredentials()))
 	conn, err := grpc.NewClient("user-service:8080", grpc.WithTransportCredentials(insecure.NewCredentials()))
 
 	if err != nil {
@@ -24,7 +23,6 @@ func main() {
 	userServiceClient := pb.NewUserServiceClient(conn)
 
 	// Connect to NATS
-	// nc, err := nats.Connect(nats.DefaultURL)
 	nc, err := nats.Connect("nats-server:4222")
 
 	if err != nil {

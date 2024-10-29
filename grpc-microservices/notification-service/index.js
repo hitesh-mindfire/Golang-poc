@@ -1,8 +1,7 @@
 const nats = require("nats");
 
 async function main() {
-  // Connect to NATS
-  // const nc = await nats.connect({ servers: "nats://localhost:4222" });
+  // Connect to NATS;
   const nc = await nats.connect({ servers: "nats-server:4222" });
 
   console.log("Notification Service listening for order events...");
@@ -13,7 +12,6 @@ async function main() {
     console.log(`Received order notification: ${m.data}`);
   }
 
-  // Close NATS connection when done
   nc.closed().then((err) => {
     if (err) {
       console.log(`Notification Service exited with an error: ${err.message}`);
