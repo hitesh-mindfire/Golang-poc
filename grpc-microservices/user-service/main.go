@@ -10,13 +10,11 @@ import (
 	"google.golang.org/grpc"
 )
 
-// Server represents the gRPC server
 type Server struct {
 	pb.UnimplementedUserServiceServer
 }
 
 func (s *Server) GetUser(ctx context.Context, req *pb.UserRequest) (*pb.UserResponse, error) {
-	// Mock user data
 	user := &pb.UserResponse{
 		UserId: req.UserId,
 		Name:   "John Doe",
