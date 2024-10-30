@@ -14,7 +14,7 @@ The microservices architecture contains the following services:
 
 - **gRPC**: Remote procedure call (RPC) framework for efficient communication between services.
 - **NATS**: Lightweight messaging system for event streaming between services.
-- **Docker**: Containerization platform to package and distribute services.
+- **Docker**: Packages each service into its own container.
 - **Kubernetes**: Manages and scales the containerized services.
 
 ## Service Descriptions
