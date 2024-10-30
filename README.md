@@ -1,4 +1,4 @@
-# Microservices Project with gRPC, NATS, Docker, and Kubernetes
+# Microservices with gRPC, NATS, Docker, and Kubernetes
 
 This project demonstrates a microservices architecture using **gRPC** for service-to-service communication and **NATS** as an event streaming platform. Each service runs in a Docker container and is managed on Kubernetes.
 
@@ -87,6 +87,5 @@ Steps
 2. Deploy to Kubernetes: Apply each service’s deployment and service YAML files to set up networking and  scaling.
 
 3. Verify the Workflow:
-
-   Trigger an order through the Order Service.
-   Confirm that the Notification Service receives the event and logs the message.
+   - Trigger an order through the Order Service.
+   - Confirm that the Notification Service receives the event and logs the message.
