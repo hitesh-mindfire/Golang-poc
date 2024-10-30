@@ -23,7 +23,7 @@ The microservices architecture contains the following services:
 
 - **Purpose**: Provides basic user information based on User ID.
 - **Implementation**:
-  - Written in Go with gRPC for service-to-service calls.
+  - Built in Go and uses gRPC.
   - Defines the `GetUser` RPC method to return user details.
 - **Tools**: `gRPC`, `Docker`, `Kubernetes`.
 
