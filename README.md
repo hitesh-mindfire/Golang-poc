@@ -79,9 +79,7 @@ kubectl apply -f .\kubernetes\notification-service.yaml
 
 # Running the Project
 
-## Prerequisites
-
-Steps
+## Steps
 1. Build Docker images:
 
 2. Deploy to Kubernetes: Apply each service’s deployment and service YAML files to set up networking and  scaling.
